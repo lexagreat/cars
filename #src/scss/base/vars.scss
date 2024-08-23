@@ -1,0 +1,85 @@
+$inter: "Inter", sans-serif;
+
+$black: #010101;
+$white: #e6e6e6;
+$grey: #373737;
+$strokeGrey: #6b6b6b;
+$pureGrey: #f1f1f1;
+$lightGrey: #7e7e7e;
+$accent: #ca0000;
+
+@mixin h1 {
+   font-weight: 700;
+   font-size: 56px;
+   letter-spacing: -3%;
+   line-height: 1.1;
+}
+@mixin h2 {
+   font-weight: 700;
+   font-size: 40px;
+   letter-spacing: -3%;
+   line-height: 1.15;
+}
+@mixin h3 {
+   font-weight: 700;
+   font-size: 28px;
+   letter-spacing: -3%;
+   line-height: 1.2;
+}
+@mixin h4 {
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: -3%;
+   line-height: 1.15;
+}
+@mixin body-xl {
+   font-weight: 500;
+   font-size: 24px;
+   letter-spacing: -5%;
+   line-height: 1.25;
+}
+@mixin body-l {
+   font-weight: 500;
+   font-size: 18px;
+   letter-spacing: -5%;
+   line-height: 1.2;
+}
+@mixin body-m {
+   font-weight: 500;
+   font-size: 16px;
+   letter-spacing: -5%;
+   line-height: 1.35;
+}
+@mixin body-s {
+   font-weight: 500;
+   font-size: 13px;
+   letter-spacing: -5%;
+   line-height: 1.4;
+}
+@mixin h1-mobile {
+   font-weight: 700;
+   font-size: 36px;
+   letter-spacing: -3%;
+   line-height: 1.1;
+}
+@mixin h2-mobile {
+   font-weight: 700;
+   font-size: 28px;
+   letter-spacing: -3%;
+   line-height: 1.15;
+}
+@mixin h3-mobile {
+   font-weight: 700;
+   font-size: 20px;
+   letter-spacing: -3%;
+   line-height: 1.2;
+}
+@mixin body-xl-mobile {
+   font-weight: 500;
+   font-size: 22px;
+   letter-spacing: -5%;
+   line-height: 1.25;
+}
+
+$tablet: 992px;
+$mobile: 568px;

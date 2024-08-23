@@ -1,0 +1,122 @@
+.hot {
+   // .hot__wrapper
+   margin-bottom: 120px;
+   &__wrapper {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding-left: calc((100vw - 1340px) / 2);
+   }
+
+   // .hot__title
+
+   &__title {
+      @include h2;
+      text-transform: uppercase;
+   }
+
+   // .hot__slider
+
+   &__slider {
+      min-width: 0;
+   }
+
+   // .hot__swiper
+
+   &__swiper {
+      min-width: 0;
+      padding-right: calc((100vw - 1340px) / 2);
+   }
+   &__list {
+      display: none;
+   }
+   @media (max-width: 1440px) {
+      &__wrapper {
+         padding-left: 20px;
+      }
+      &__swiper {
+         padding-right: 20px;
+      }
+   }
+   @media (max-width: $tablet) {
+      margin-bottom: 80px;
+      &__wrapper {
+         flex-direction: column;
+      }
+      &__swiper {
+         width: 100vw;
+         overflow: hidden;
+         padding-left: 20px;
+         display: none;
+      }
+      &__list {
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+      }
+   }
+}
+.hot-slide {
+   // .hot-slide__gallery
+   transition: 0.5s;
+   width: 436px;
+   // &.swiper-slide-active {
+   //    // width: 549px;
+   //    .hot-slide__gallery {
+   //       // width: 549px;
+   //       height: 400px;
+   //    }
+   // }
+   &__gallery {
+      transition: 0.5s;
+
+      .swiper-slide {
+         max-width: 100%;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   // .hot-slide__main
+
+   &__main {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+
+   // .hot-slide__heading
+
+   &__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+   // .hot-slide__price
+   &__price {
+      @include h3;
+   }
+
+   // .hot-slide__title
+
+   &__title {
+      @include body-l;
+   }
+
+   // .hot-slide__phone
+
+   &__phone {
+      @include h4;
+      color: $lightGrey;
+   }
+
+   // .hot-slide__chars
+
+   &__chars {
+      display: none;
+   }
+}
