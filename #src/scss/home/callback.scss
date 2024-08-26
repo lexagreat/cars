@@ -1,0 +1,107 @@
+.callback {
+   // .callback__wrapper
+   margin-bottom: 120px;
+   &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 172px;
+   }
+
+   // .callback__label
+
+   &__label {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      @include h4;
+      text-transform: uppercase;
+      &::before {
+         content: "";
+         display: block;
+         width: 8px;
+         height: 8px;
+         flex: 0 0 8px;
+         border-radius: 50%;
+         background-color: $white;
+      }
+   }
+
+   // .callback__main
+
+   &__main {
+   }
+
+   // .callback__title
+
+   &__title {
+   }
+
+   // .callback__remind
+
+   &__remind {
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      @include body-m;
+      margin-left: 226px;
+   }
+
+   // .callback__form
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      span {
+         margin-top: 8px;
+         margin-bottom: 16px;
+         font-size: 13px;
+         font-weight: 500;
+         line-height: calc(15.6 / 13);
+         letter-spacing: -0.04em;
+
+         color: $lightGrey;
+         a {
+            color: $lightGrey;
+         }
+      }
+      input {
+         height: 56px;
+         background-color: transparent;
+         border: 1px solid $strokeGrey;
+         padding-left: 16px;
+         @include body-l;
+         color: $white;
+         &::placeholder {
+            color: $lightGrey;
+         }
+      }
+      button {
+         height: 56px;
+      }
+   }
+   @media (max-width: $tablet) {
+      margin-bottom: 80px;
+      &__wrapper {
+         flex-direction: column;
+         gap: 16px;
+      }
+      &__label {
+         flex: unset;
+      }
+      &__remind {
+         margin-left: 90px;
+         @include body-m;
+      }
+      &__form {
+         span {
+            margin-bottom: 24px;
+         }
+      }
+      button {
+         background-color: $accent !important;
+         border-color: $accent !important;
+         color: $white !important;
+      }
+   }
+}

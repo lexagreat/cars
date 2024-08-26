@@ -76,7 +76,7 @@
    &.open {
       z-index: 2;
       .select {
-         &_ &__title {
+         &__title {
             svg {
                rotate: 180deg;
             }

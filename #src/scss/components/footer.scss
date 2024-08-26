@@ -1,0 +1,119 @@
+.footer {
+   // .footer__upper
+   background-color: $white;
+   color: $black;
+   &__upper {
+      display: flex;
+      gap: 16px;
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 40px;
+   }
+
+   // .footer__logo
+
+   &__logo {
+      display: flex;
+      gap: 16px;
+      flex: 0 0 549px;
+      p {
+         @include h4;
+         flex: 0 0 326px;
+         text-transform: uppercase;
+      }
+   }
+
+   // .footer__menu
+
+   &__menu {
+   }
+   &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 0 0 210px;
+      ul {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+   }
+   // .footer__title
+
+   &__title {
+      @include h4;
+      text-transform: uppercase;
+   }
+
+   // .footer__link
+
+   &__link {
+      @include body-l;
+      color: $black;
+   }
+
+   // .footer__contacts
+
+   &__contacts {
+   }
+
+   // .footer__up
+
+   &__up {
+      flex: 1;
+      justify-content: flex-end;
+      display: flex;
+      height: fit-content;
+      align-items: center;
+      gap: 8px;
+      @include h4;
+      text-transform: uppercase;
+      color: $lightGrey;
+   }
+   &__btns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      button {
+         height: 56px;
+      }
+      button:nth-child(1) {
+         grid-column: span 2;
+      }
+   }
+   @media (max-width: 1200px) {
+      &__logo {
+         flex: 0 0 450px;
+         p {
+            flex: 0 0 250px;
+         }
+      }
+      &__block {
+         flex: 0 0 180px;
+      }
+   }
+   @media (max-width: $tablet) {
+      &__upper {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         padding-top: 30px;
+         padding-bottom: 24px;
+      }
+      &__logo {
+         flex: unset;
+         flex-direction: column;
+         gap: 8px;
+         p {
+            flex: unset;
+         }
+      }
+      &__link {
+         @include body-m;
+      }
+      &__contacts {
+         grid-column: span 2;
+      }
+      &__up {
+         justify-content: flex-start;
+      }
+   }
+}

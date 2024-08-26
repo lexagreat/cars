@@ -148,13 +148,164 @@
             <div class="container">
                <ul class="hero__btns">
                   <li>
-                     <button class="btn accent">записаться на тест-драйв</button>
+                     <a href="#modalCallback" class="btn accent modal__link">записаться на тест-драйв</a>
                   </li>
                   <li>
-                     <button class="btn black">рассчитать кредит</button>
+                     <a href="#modalCredit1" class="btn black modal__link">рассчитать кредит</a>
                   </li>
                </ul>
             </div>
+            <div class="modal credit-modal" id="modalCallback">
+   <div class="modal__content credit-modal__content">
+      <div class="credit-modal__close modal__close">
+         <img src="img/icons/modal-xlose.svg" alt="">
+      </div>
+      <div class="credit-modal__wrapper">
+         <h2 class="credit-modal__title">Отправьте заявку на тест-драйв сейчас и получите в подарок пакет допов на 100
+            000 руб., а также лучшую цену в городе!</h2>
+         <div class="credit-modal__main">
+            <input type="text" placeholder="Введите ваш номер телефона" data-mask>
+         </div>
+         <div class="credit-modal__footer">
+            <button class="btn accent modal__close">заказать звонок</button>
+            <span>Отправляя данные, вы соглашаетесь с Политикой обработки данных на этом сайте</span>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+<div class="modal credit-modal" id="modalCredit1">
+   <div class="modal__content credit-modal__content">
+      <div class="credit-modal__close modal__close">
+         <img src="img/icons/modal-xlose.svg" alt="">
+      </div>
+      <div class="credit-modal__wrapper">
+         <div class="credit-modal__header">
+            <span>Кредитный квиз</span>
+            <h2 class="credit-modal__title">Выберите марку автомобиля</h2>
+         </div>
+         <div class="credit-modal__main">
+            <div class="credit-modal__select" id="creditModalSelect"></div>
+         </div>
+         <div class="credit-modal__footer">
+            <a href="#modalCredit2" class="btn accent modal__link">продолжить</a>
+            <span>Отправляя данные, вы соглашаетесь с Политикой обработки данных на этом сайте</span>
+            <p class="credit-modal__pagination">1/4</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal credit-modal" id="modalCredit2">
+   <div class="modal__content credit-modal__content">
+      <div class="credit-modal__close modal__close">
+         <img src="img/icons/modal-xlose.svg" alt="">
+      </div>
+      <div class="credit-modal__wrapper">
+         <div class="credit-modal__header">
+            <span>Кредитный квиз</span>
+            <h2 class="credit-modal__title">ВЫБЕРИТЕ ПЕРВОНАЧАЛЬНЫЙ ВЗНОС</h2>
+         </div>
+         <div class="credit-modal__main">
+            <ul class="credit-modal__radio">
+               <li>
+                  <input type="radio" name="creditModalRadio" id="creditModalRadio0" value="0">
+                  <label for="creditModalRadio0">100 000 ₽</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadio" id="creditModalRadio1" value="1">
+                  <label for="creditModalRadio1">200 000 ₽</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadio" id="creditModalRadio2" value="2">
+                  <label for="creditModalRadio2">300 000 ₽</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadio" id="creditModalRadio3" value="3">
+                  <label for="creditModalRadio3">50%</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadio" id="creditModalRadio4" value="4">
+                  <label for="creditModalRadio4">Другая</label>
+               </li>
+            </ul>
+            <input placeholder="Введите сумму" id="creditModalRadio4Input" style="display: none;" />
+         </div>
+         <div class="credit-modal__footer">
+            <a href="#modalCredit3" class="btn accent modal__link">продолжить</a>
+            <span>Отправляя данные, вы соглашаетесь с Политикой обработки данных на этом сайте</span>
+            <p class="credit-modal__pagination">2/4</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="modal credit-modal" id="modalCredit3">
+   <div class="modal__content credit-modal__content">
+      <div class="credit-modal__close modal__close">
+         <img src="img/icons/modal-xlose.svg" alt="">
+      </div>
+      <div class="credit-modal__wrapper">
+         <div class="credit-modal__header">
+            <span>Кредитный квиз</span>
+            <h2 class="credit-modal__title">срок кредита</h2>
+         </div>
+         <div class="credit-modal__main credit-modal__main_radio">
+            <ul class="credit-modal__radio">
+               <li>
+                  <input type="radio" name="creditModalRadioSrok" id="creditModalRadioSrok0" value="0">
+                  <label for="creditModalRadioSrok0">1 год</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadioSrok" id="creditModalRadioSrok1" value="1">
+                  <label for="creditModalRadioSrok1">2 года</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadioSrok" id="creditModalRadioSrok2" value="2">
+                  <label for="creditModalRadioSrok2">3 года</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadioSrok" id="creditModalRadioSrok3" value="3">
+                  <label for="creditModalRadioSrok3">5 лет</label>
+               </li>
+               <li>
+                  <input type="radio" name="creditModalRadioSrok" id="creditModalRadioSrok4" value="4">
+                  <label for="creditModalRadioSrok4">8 лет</label>
+               </li>
+            </ul>
+            <button>Пока не знаю</button>
+         </div>
+         <div class="credit-modal__footer">
+            <a href="#modalCredit4" class="btn accent modal__link">продолжить</a>
+            <span>Отправляя данные, вы соглашаетесь с Политикой обработки данных на этом сайте</span>
+            <p class="credit-modal__pagination">3/4</p>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="modal credit-modal" id="modalCredit4">
+   <div class="modal__content credit-modal__content">
+      <div class="credit-modal__close modal__close">
+         <img src="img/icons/modal-xlose.svg" alt="">
+      </div>
+      <div class="credit-modal__wrapper">
+         <div class="credit-modal__header">
+            <span>Кредитный квиз</span>
+            <h2 class="credit-modal__title">введите номер телефона, чтобы узнать результат одобрения</h2>
+         </div>
+         <div class="credit-modal__main">
+            <input type="text" placeholder="Введите ваш номер телефона" data-mask>
+         </div>
+         <div class="credit-modal__footer">
+            <a class="btn accent modal__close">заказать звонок</a>
+            <span>Отправляя данные, вы соглашаетесь с Политикой обработки данных на этом сайте</span>
+            <p class="credit-modal__pagination">Оставление заявки не обязывает Вас к покупке</p>
+         </div>
+      </div>
+   </div>
+</div>
+
          </section>
          <section class="benefits pc">
             <div class="container">
@@ -909,10 +1060,117 @@
                </div>
             </div>
          </section>
+         <section class="today">
+            <div class="container">
+               <div class="today__wrapper">
+                  <div class="today__main">
+                     <h2 class="today__title">Приезжайте к нам сегодня</h2>
+                     <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae104d9a26a163e07f69e894531d8c43a5619f32a16ab53054288e400899e28b6&amp;source=constructor"
+                        width="650" height="250" frameborder="0"></iframe>
+                     <div class="today__contacts">
+                        <span class="today__label">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M16.625 17.5C14.8889 17.5 13.1736 17.1215 11.4792 16.3646C9.78472 15.6076 8.24306 14.5347 6.85417 13.1458C5.46528 11.7569 4.39236 10.2153 3.63542 8.52083C2.87847 6.82639 2.5 5.11111 2.5 3.375C2.5 3.125 2.58333 2.91667 2.75 2.75C2.91667 2.58333 3.125 2.5 3.375 2.5H6.75C6.94444 2.5 7.11806 2.56597 7.27083 2.69792C7.42361 2.82986 7.51389 2.98611 7.54167 3.16667L8.08333 6.08333C8.11111 6.30556 8.10417 6.49306 8.0625 6.64583C8.02083 6.79861 7.94444 6.93056 7.83333 7.04167L5.8125 9.08333C6.09028 9.59722 6.42014 10.0938 6.80208 10.5729C7.18403 11.0521 7.60417 11.5139 8.0625 11.9583C8.49306 12.3889 8.94444 12.7882 9.41667 13.1562C9.88889 13.5243 10.3889 13.8611 10.9167 14.1667L12.875 12.2083C13 12.0833 13.1632 11.9896 13.3646 11.9271C13.566 11.8646 13.7639 11.8472 13.9583 11.875L16.8333 12.4583C17.0278 12.5139 17.1875 12.6146 17.3125 12.7604C17.4375 12.9062 17.5 13.0694 17.5 13.25V16.625C17.5 16.875 17.4167 17.0833 17.25 17.25C17.0833 17.4167 16.875 17.5 16.625 17.5ZM5.02083 7.5L6.39583 6.125L6.04167 4.16667H4.1875C4.25694 4.73611 4.35417 5.29861 4.47917 5.85417C4.60417 6.40972 4.78472 6.95833 5.02083 7.5ZM12.4792 14.9583C13.0208 15.1944 13.5729 15.3819 14.1354 15.5208C14.6979 15.6597 15.2639 15.75 15.8333 15.7917V13.9583L13.875 13.5625L12.4792 14.9583Z"
+                                 fill="#E6E6E6" />
+                           </svg>
+
+                           Наш телефон</span>
+                        <a href="tel:+7 (812) 214-15-05">+7 (812) 214-15-05</a>
+                     </div>
+                     <button class="btn white">заказать звонок</button>
+                  </div>
+                  <div class="today__address">
+                     <span class="today__label">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M10.0003 18.3333C8.84755 18.3333 7.76421 18.1145 6.75033 17.677C5.73644 17.2395 4.85449 16.6458 4.10449 15.8958C3.35449 15.1458 2.76074 14.2638 2.32324 13.25C1.88574 12.2361 1.66699 11.1527 1.66699 9.99996C1.66699 8.84718 1.88574 7.76385 2.32324 6.74996C2.76074 5.73607 3.35449 4.85413 4.10449 4.10413C4.85449 3.35413 5.73644 2.76038 6.75033 2.32288C7.76421 1.88538 8.84755 1.66663 10.0003 1.66663C11.1531 1.66663 12.2364 1.88538 13.2503 2.32288C14.2642 2.76038 15.1462 3.35413 15.8962 4.10413C16.6462 4.85413 17.2399 5.73607 17.6774 6.74996C18.1149 7.76385 18.3337 8.84718 18.3337 9.99996C18.3337 11.1527 18.1149 12.2361 17.6774 13.25C17.2399 14.2638 16.6462 15.1458 15.8962 15.8958C15.1462 16.6458 14.2642 17.2395 13.2503 17.677C12.2364 18.1145 11.1531 18.3333 10.0003 18.3333ZM10.0003 14.5833C10.6253 13.9583 11.1809 13.3125 11.667 12.6458C12.0837 12.0763 12.4656 11.4513 12.8128 10.7708C13.16 10.0902 13.3337 9.41663 13.3337 8.74996C13.3337 7.83329 13.0073 7.04857 12.3545 6.39579C11.7017 5.74301 10.917 5.41663 10.0003 5.41663C9.08366 5.41663 8.29894 5.74301 7.64616 6.39579C6.99338 7.04857 6.66699 7.83329 6.66699 8.74996C6.66699 9.41663 6.8406 10.0902 7.18783 10.7708C7.53505 11.4513 7.91699 12.0763 8.33366 12.6458C8.81977 13.3125 9.37533 13.9583 10.0003 14.5833ZM10.0003 9.99996C9.6531 9.99996 9.35796 9.87843 9.11491 9.63538C8.87185 9.39232 8.75033 9.09718 8.75033 8.74996C8.75033 8.40274 8.87185 8.1076 9.11491 7.86454C9.35796 7.62149 9.6531 7.49996 10.0003 7.49996C10.3475 7.49996 10.6427 7.62149 10.8857 7.86454C11.1288 8.1076 11.2503 8.40274 11.2503 8.74996C11.2503 9.09718 11.1288 9.39232 10.8857 9.63538C10.6427 9.87843 10.3475 9.99996 10.0003 9.99996Z"
+                              fill="#E6E6E6" />
+                        </svg>
+                        Наш адрес
+                     </span>
+                     <p>г. Санкт-Петербург, Пулковское шоссе 52к2</p>
+                     <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae104d9a26a163e07f69e894531d8c43a5619f32a16ab53054288e400899e28b6&amp;source=constructor"
+                        width="650" height="250" frameborder="0"></iframe>
+                     <button class="btn white">заказать звонок</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="callback">
+            <div class="container">
+               <div class="callback__wrapper">
+                  <span class="callback__label">оставьте заявку</span>
+                  <div class="callback__main">
+                     <h2 class="callback__title today__title">Отправьте заявку на&nbsp;тест-драйв сейчас и&nbsp;получите
+                        в&nbsp;подарок
+                        пакет допов на&nbsp;100&nbsp;000&nbsp;₽, а&nbsp;также лучшую цену в&nbsp;городе!</h2>
+                     <span class="callback__remind">[ Мы обещаем не спамить ]</span>
+                     <form class="callback__form">
+                        <input type="text" placeholder="Введите ваш номер телефона" data-mask>
+                        <span>Отправляя данные, вы соглашаетесь с <a href="#" target="_blank">Политикой обработки
+                              данных</a> на этом сайте</span>
+                        <button class="btn white">заказать звонок</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
-      <footer></footer>
+      <footer class="footer">
+   <div class="container">
+      <div class="footer__upper">
+         <div class="footer__logo">
+            <a href="index.html">
+               <img src="img/icons/logo.svg" alt="">
+            </a>
+            <p>
+               Продажа новых и поддержанных автомобилей в Санкт-Петербурге и ЛО
+            </p>
+         </div>
+         <div class="footer__menu footer__block">
+            <h5 class="footer__title">меню</h5>
+            <ul>
+               <li>
+                  <a href="#" class="footer__link">Тест-драйв</a>
+               </li>
+               <li>
+                  <a href="#" class="footer__link">Автомобили</a>
+               </li>
+               <li>
+                  <a href="#" class="footer__link">Автокредит</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__contacts footer__block">
+            <h5 class="footer__title">контакты</h5>
+            <ul>
+               <li>
+                  <a href="tel:+7 (812) 214-15-05" class="footer__link">+7 (812) 214-15-05</a>
+               </li>
+               <li>
+                  <p class="footer__link">г. Санкт-Петербург, Пулковское шоссе 52к2</p>
+               </li>
+            </ul>
+         </div>
+         <button class="footer__up">
+            <span>наверх</span>
+            <img src="img/icons/footer-up.svg" alt="">
+         </button>
+      </div>
+   </div>
+   <div class="footer__btns">
+      <button class="btn accent">записаться на тест-драйв</button>
+      <button class="btn black">рассчитать кредит</button>
+      <button class="btn white">заказать звонок</button>
+   </div>
+</footer>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/imask"></script>
    <script src="js/app.js"></script>
 </body>
 
